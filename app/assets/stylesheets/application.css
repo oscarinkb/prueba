@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+*/
+
+a{
+	text-decoration:none;
+	color:#cc6600;
+	
+	
+}
+
+a:hover{
+	background-color:#black;
+	
+	color:#663300;
+	
+	
+}
+
+#all{
+	width:864px;
+	height:1100px;
+	margin:0 auto;
+}
+#header{
+	width:864px;
+	height:205px;
+	margin:0 auto;
+}
+#carrete{
+	
+	width:216px;
+	height:1033px;
+	float:left;
+	
+	
+}
+#contenido{
+	width:640px;
+	height:533px;
+	float:right;
+	
+		
+}
+#contenido ul{
+	float:left;
+	list-style:none;
+	text-decoration:none;
+	font-color:#000000;
+	
+}
+
+#contenido ul li{
+	
+	text-decoration:none;
+	float:left;
+	width:auto;
+	background-color:#ffcc33;
+	border:1px solid black;
+	padding-left:31px;
+	padding-right:31px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-left:0px;
+	margin-right:0px;			
+				
+				
+}
+
+#contenido ul li a{
+	color:black;
+}
+
+
+
+#center{
+	width:864px;
+	height:1033px;
+	
+}
+		
+#tabla tr th{
+	
+	vertical-align:top;
+	width:90px;
+}
+
+#tabla tr td{
+	
+	vertical-align:top;
+	width:90px;
+	color:#333333;
+}
+
+#tabla2 tr th{
+	
+	vertical-align:top;
+
+}
+
+#tabla2 tr td{
+	
+	vertical-align:top;
+	
+	color:#333333;
+}
+
+#linea{
+	width:auto;
+	height:2px;
+	background-color:#ffcc33;
+	
+	
+}
+
+
+
+
+
+

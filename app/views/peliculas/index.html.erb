@@ -1,0 +1,53 @@
+<h1>Lista de Películas.</h1>
+<%= link_to 'Introducir una nueva película.', new_pelicula_path %>
+<br/>
+<div id="linea">
+<br />
+	
+</div>
+<br/>
+<br/>
+
+
+
+<% @peliculas.each do |pelicula| %>
+<table id="tabla">
+  <tr>
+    <th>Nombre: </th><td><%= pelicula.nombre %></td>
+    <th>Fecha de publicación: </th><td><%= pelicula.fecha %></td>
+    <th>Director: </th><td><%= pelicula.director.nombre %></td> 
+  </tr>
+</table> 
+
+<table id="tabla2">
+   <tr>
+	<th>Sinopsis: </th><td><%= pelicula.sinop %></td> 
+   </tr>
+</table> 
+<br />
+<br />
+
+
+
+
+<table id="table3">
+  <tr>
+    <td><%= link_to 'Ver más |', pelicula %></td>
+    <td><%= link_to 'Editar |', edit_pelicula_path(pelicula) %></td>
+    <td><%= link_to 'Eliminar', pelicula, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+</table>
+
+<br />
+
+<div id="linea">
+	<br />
+	
+</div>	
+<br />
+<br />
+<% end %>
+</table>
+
+<br />
+

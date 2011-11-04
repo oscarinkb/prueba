@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  nombre: MyString
+  fecha: 2011-10-21
+  sinop: MyText
+  director: 
+
+two:
+  nombre: MyString
+  fecha: 2011-10-21
+  sinop: MyText
+  director: 

@@ -1,0 +1,39 @@
+<%= form_for(@pelicula) do |f| %>
+  <% if @pelicula.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pelicula.errors.count, "error") %> prohibited this pelicula from being saved:</h2>
+
+      <ul>
+      <% @pelicula.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.date_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :sinop %><br />
+    <%= f.text_area :sinop %>
+  </div>
+  <div class="field">
+    <%= f.label :director %><br />
+    <%= f.collection_select :director_id, Director.all, :id, :nombre %>
+  </div>
+
+
+
+
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
